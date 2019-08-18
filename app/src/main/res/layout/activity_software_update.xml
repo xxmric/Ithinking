@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/softwareupdate_bg"
+    tools:context=".activity.SoftwareUpdateActivity">
+
+    <TextView
+        android:id="@+id/tv_softwareUpdate"
+        android:layout_centerInParent="true"
+        android:text="发现有Widget的新版本，您想现在安装吗？"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/b_yhzs"
+        android:text="以后再说"
+        android:layout_below="@id/tv_softwareUpdate"
+        android:layout_alignRight="@id/tv_softwareUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/b_ljgx"
+        android:text="立即更新"
+        android:layout_below="@id/tv_softwareUpdate"
+        android:layout_toLeftOf="@id/b_yhzs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

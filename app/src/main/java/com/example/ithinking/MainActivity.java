@@ -8,9 +8,13 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.ithinking.activity.ChronometerActivity;
+import com.example.ithinking.activity.DateAndTimeActivity;
+import com.example.ithinking.activity.FeijidazhanActivity;
 import com.example.ithinking.activity.FrameLayoutActivity;
 import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
+import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
 import com.example.ithinking.activity.QQSpeakActivity;
@@ -134,6 +138,42 @@ public class MainActivity extends AppCompatActivity {
      */
     public void question(View view) {
         Intent intent = new Intent(this, QuestionActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 飞机大战授权界面
+     * @param view
+     */
+    public void feijidazhan(View view) {
+        Intent intent = new Intent(this, FeijidazhanActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 日期与时间选择器
+     * @param view
+     */
+    public void dateAndTime(View view) {
+        Intent intent = new Intent(this, DateAndTimeActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 计时器
+     * @param view
+     */
+    public void chronometer(View view) {
+        Intent intent = new Intent(this, ChronometerActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 进度条
+     * @param view
+     */
+    public void progressBar(View view) {
+        Intent intent = new Intent(this, ProgressBarActivity.class);
         startActivity(intent);
     }
 }

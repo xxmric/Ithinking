@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".activity.QuestionActivity"></activity>
+        <activity android:name=".activity.ProgressBarActivity"></activity>
+        <activity android:name=".activity.ChronometerActivity" />
+        <activity android:name=".activity.DateAndTimeActivity" />
+        <activity android:name=".activity.FeijidazhanActivity" />
+        <activity android:name=".activity.QuestionActivity" />
         <activity android:name=".activity.KxxxlStartActivity" />
         <activity android:name=".activity.KxxxlLoginActivity" />
         <activity android:name=".activity.QQSpeakActivity" />

@@ -71,6 +71,26 @@
             android:layout_height="wrap_content"
             android:onClick="question"
             android:text="逻辑推理题" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="feijidazhan"
+            android:text="飞机大战授权界面" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dateAndTime"
+            android:text="日期时间选择器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chronometer"
+            android:text="计时器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="progressBar"
+            android:text="进度条" />
 
 
     </LinearLayout>

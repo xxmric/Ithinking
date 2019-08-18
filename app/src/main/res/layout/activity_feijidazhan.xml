@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".activity.FeijidazhanActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/feiji_top" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录后该应用将获得以下权限"
+        android:textSize="14sp"/>
+    <CheckBox
+        android:id="@+id/feiji_checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取你的公开信息（昵称、头像等）"
+        android:textColor="#BDBDBD"
+        android:textSize="12sp"
+        android:checked="true"/>
+    <CheckBox
+        android:id="@+id/feiji_checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="寻找与你共同使用该应用的好友"
+        android:textColor="#BDBDBD"
+        android:textSize="12sp"
+        android:checked="true"/>
+    <CheckBox
+        android:id="@+id/feiji_checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帮助你通过该应用向好友发送消息"
+        android:textColor="#BDBDBD"
+        android:textSize="12sp"
+        android:checked="true"/>
+    <Button
+        android:id="@+id/bt_feiji_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="确认登录"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="取消"/>
+
+</LinearLayout>

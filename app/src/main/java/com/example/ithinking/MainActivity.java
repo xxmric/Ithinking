@@ -14,6 +14,7 @@ import com.example.ithinking.activity.KxxxlStartActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
 import com.example.ithinking.activity.QQSpeakActivity;
+import com.example.ithinking.activity.QuestionActivity;
 import com.example.ithinking.activity.RabbitActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.WeixinFriendActivity;
@@ -124,6 +125,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void kxxxlStart(View view) {
         Intent intent = new Intent(this, KxxxlStartActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 逻辑推理题
+     * @param view
+     */
+    public void question(View view) {
+        Intent intent = new Intent(this, QuestionActivity.class);
         startActivity(intent);
     }
 }

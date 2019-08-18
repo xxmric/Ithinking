@@ -66,6 +66,11 @@
             android:layout_height="wrap_content"
             android:onClick="kxxxlStart"
             android:text="开心消消乐开始页面" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="question"
+            android:text="逻辑推理题" />
 
 
     </LinearLayout>

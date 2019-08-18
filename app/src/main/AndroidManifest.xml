@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".activity.KxxxlStartActivity"></activity>
-        <activity android:name=".activity.KxxxlLoginActivity"/>
+        <activity android:name=".activity.QuestionActivity"></activity>
+        <activity android:name=".activity.KxxxlStartActivity" />
+        <activity android:name=".activity.KxxxlLoginActivity" />
         <activity android:name=".activity.QQSpeakActivity" />
         <activity android:name=".activity.WeixinFriendActivity" />
         <activity android:name=".activity.QQMessagesActivity" />

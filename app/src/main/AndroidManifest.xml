@@ -8,8 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".activity.ProgressBarActivity"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.ListViewActivity"></activity>
+        <activity android:name=".activity.SpinnerActivity" />
+        <activity android:name=".activity.GridViewActivity" />
+        <activity
+            android:name=".activity.ImageSwitcherActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".activity.ImageViewActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.RatingBarActivity" />
+        <activity android:name=".activity.SeekBarActivity" />
+        <activity android:name=".activity.ProgressBarActivity" />
         <activity android:name=".activity.ChronometerActivity" />
         <activity android:name=".activity.DateAndTimeActivity" />
         <activity android:name=".activity.FeijidazhanActivity" />

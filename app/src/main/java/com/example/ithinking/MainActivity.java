@@ -2,25 +2,32 @@ package com.example.ithinking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
 import com.example.ithinking.activity.FeijidazhanActivity;
 import com.example.ithinking.activity.FrameLayoutActivity;
+import com.example.ithinking.activity.GridViewActivity;
+import com.example.ithinking.activity.ImageSwitcherActivity;
+import com.example.ithinking.activity.ImageViewActivity;
 import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
+import com.example.ithinking.activity.ListViewActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
 import com.example.ithinking.activity.QQSpeakActivity;
 import com.example.ithinking.activity.QuestionActivity;
 import com.example.ithinking.activity.RabbitActivity;
+import com.example.ithinking.activity.RatingBarActivity;
+import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
+import com.example.ithinking.activity.SeekBarActivity;
+import com.example.ithinking.activity.SpinnerActivity;
 import com.example.ithinking.activity.WeixinFriendActivity;
 import com.example.ithinking.activity.WeixinLoginActivity;
 import com.example.ithinking.activity.XmlyLoginActivity;
@@ -174,6 +181,69 @@ public class MainActivity extends AppCompatActivity {
      */
     public void progressBar(View view) {
         Intent intent = new Intent(this, ProgressBarActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 拖动条
+     * @param view
+     */
+    public void seekBar(View view) {
+        Intent intent = new Intent(this, SeekBarActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 星级评分条
+     * @param view
+     */
+    public void ratingBar(View view) {
+        Intent intent = new Intent(this, RatingBarActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 图像视图
+     * @param view
+     */
+    public void imageView(View view) {
+        Intent intent = new Intent(this, ImageViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 图像切换器
+     * @param view
+     */
+    public void imageSwitcher(View view) {
+        Intent intent = new Intent(this, ImageSwitcherActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 网格视图
+     * @param view
+     */
+    public void gridView(View view) {
+        Intent intent = new Intent(this, GridViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 下拉列表框
+     * @param view
+     */
+    public void spinner(View view) {
+        Intent intent = new Intent(this, SpinnerActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 列表视图
+     * @param view
+     */
+    public void listView(View view) {
+        Intent intent = new Intent(this, ListViewActivity.class);
         startActivity(intent);
     }
 }

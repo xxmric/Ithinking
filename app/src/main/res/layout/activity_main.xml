@@ -91,6 +91,41 @@
             android:layout_height="wrap_content"
             android:onClick="progressBar"
             android:text="进度条" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="seekBar"
+            android:text="拖动条" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ratingBar"
+            android:text="星级评分条" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="imageView"
+            android:text="图像视图" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="imageSwitcher"
+            android:text="图像切换器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gridView"
+            android:text="网格视图" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="spinner"
+            android:text="下拉列表框" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="listView"
+            android:text="列表视图" />
 
 
     </LinearLayout>

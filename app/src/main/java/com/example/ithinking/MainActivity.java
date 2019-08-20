@@ -16,6 +16,7 @@ import com.example.ithinking.activity.FrameLayoutActivity;
 import com.example.ithinking.activity.GridViewActivity;
 import com.example.ithinking.activity.ImageSwitcherActivity;
 import com.example.ithinking.activity.ImageViewActivity;
+import com.example.ithinking.activity.IntentActivity;
 import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
 import com.example.ithinking.activity.ListViewActivity;
@@ -294,6 +295,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void fragment(View view) {
         Intent intent = new Intent(this, FragmentExampleActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Intent
+     * @param view
+     */
+    public void intent(View view) {
+        Intent intent = new Intent(this, IntentActivity.class);
+        intent.setFlags(intent.FLAG_ACTIVITY_NO_HISTORY);//当前activity不在历史栈中保留
         startActivity(intent);
     }
 }

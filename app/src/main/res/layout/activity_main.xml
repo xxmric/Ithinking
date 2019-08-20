@@ -126,7 +126,16 @@
             android:layout_height="wrap_content"
             android:onClick="listView"
             android:text="列表视图" />
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="scrollView"
+            android:text="滚动视图" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tab"
+            android:text="选项卡" />
 
     </LinearLayout>
 </ScrollView>

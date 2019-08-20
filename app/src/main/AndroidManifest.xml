@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.ListViewActivity"></activity>
+        <activity android:name=".activity.TabViewActivity"></activity>
+        <activity android:name=".activity.ScrollViewActivity" />
+        <activity android:name=".activity.ListViewActivity" />
         <activity android:name=".activity.SpinnerActivity" />
         <activity android:name=".activity.GridViewActivity" />
         <activity

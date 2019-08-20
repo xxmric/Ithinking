@@ -3,6 +3,7 @@ package com.example.ithinking;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ListActivity;
+import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,10 +25,12 @@ import com.example.ithinking.activity.QQSpeakActivity;
 import com.example.ithinking.activity.QuestionActivity;
 import com.example.ithinking.activity.RabbitActivity;
 import com.example.ithinking.activity.RatingBarActivity;
+import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SpinnerActivity;
+import com.example.ithinking.activity.TabViewActivity;
 import com.example.ithinking.activity.WeixinFriendActivity;
 import com.example.ithinking.activity.WeixinLoginActivity;
 import com.example.ithinking.activity.XmlyLoginActivity;
@@ -244,6 +247,24 @@ public class MainActivity extends AppCompatActivity {
      */
     public void listView(View view) {
         Intent intent = new Intent(this, ListViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 滚动视图
+     * @param view
+     */
+    public void scrollView(View view) {
+        Intent intent = new Intent(this, ScrollViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 选项卡
+     * @param view
+     */
+    public void tab(View view) {
+        Intent intent = new Intent(this, TabViewActivity.class);
         startActivity(intent);
     }
 }

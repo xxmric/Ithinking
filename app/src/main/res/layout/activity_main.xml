@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="showQQImage"
-            android:text="QQ相册列表" />
+            android:text="网格布局管理器" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,12 +25,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="softwareUpdate"
-            android:text="软件更新" />
+            android:text="相对布局管理器" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="weixinLogin"
-            android:text="微信登录页" />
+            android:text="线性布局管理器" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,42 +40,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="xmlyLogin"
-            android:text="喜马拉雅登录页" />
+            android:text="表格布局管理器" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="qqMessage"
-            android:text="QQ消息列表" />
+            android:text="网格布局管理器" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="weixinFriend"
-            android:text="微信朋友圈" />
+            android:text="布局管理器的嵌套" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="qqSpeak"
-            android:text="发布QQ空间" />
+            android:text="EditText" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="kxxxlLogin"
-            android:text="开心消消乐授权登录" />
+            android:text="Button" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="kxxxlStart"
-            android:text="开心消消乐开始页面" />
+            android:text="ImageButton" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="question"
-            android:text="逻辑推理题" />
+            android:text="单选框" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="feijidazhan"
-            android:text="飞机大战授权界面" />
+            android:text="复选框" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -136,6 +136,21 @@
             android:layout_height="wrap_content"
             android:onClick="tab"
             android:text="选项卡" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="tabbaoAddress"
+            android:text="activity之间交换数据" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectIco"
+            android:text="调用activity并返回结果" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fragment"
+            android:text="Fragment" />
 
     </LinearLayout>
 </ScrollView>

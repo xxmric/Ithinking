@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/xmly_forgetpwd_bg"
+    android:padding="5dp"
+    tools:context=".activity.XmlyForgetpwdActivity">
+
+    <ImageButton
+        android:id="@+id/xmly_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/xmly_close"
+        android:background="#0000"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="你的邮箱或手机号"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入邮箱或手机号"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#FF8247"
+        android:text="提交"/>
+</LinearLayout>

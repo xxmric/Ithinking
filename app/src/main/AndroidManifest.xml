@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.TabViewActivity"></activity>
+        <activity android:name=".activity.FragmentExampleActivity"></activity>
+        <activity android:name=".activity.SelectIcoHeadActivity" />
+        <activity android:name=".activity.SelectIcoActivity" />
+        <activity android:name=".activity.TaoBaoAddressDetailActivity" />
+        <activity android:name=".activity.TaoBaoAddressActivity" />
+        <activity android:name=".activity.XmlyForgetpwdActivity" />
+        <activity android:name=".activity.TabViewActivity" />
         <activity android:name=".activity.ScrollViewActivity" />
         <activity android:name=".activity.ListViewActivity" />
         <activity android:name=".activity.SpinnerActivity" />

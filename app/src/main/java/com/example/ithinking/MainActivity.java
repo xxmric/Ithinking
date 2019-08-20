@@ -1,16 +1,17 @@
 package com.example.ithinking;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ListActivity;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
+
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
 import com.example.ithinking.activity.FeijidazhanActivity;
+import com.example.ithinking.activity.FragmentExampleActivity;
 import com.example.ithinking.activity.FrameLayoutActivity;
 import com.example.ithinking.activity.GridViewActivity;
 import com.example.ithinking.activity.ImageSwitcherActivity;
@@ -27,10 +28,11 @@ import com.example.ithinking.activity.RabbitActivity;
 import com.example.ithinking.activity.RatingBarActivity;
 import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
+import com.example.ithinking.activity.SelectIcoActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
-import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SpinnerActivity;
 import com.example.ithinking.activity.TabViewActivity;
+import com.example.ithinking.activity.TaoBaoAddressActivity;
 import com.example.ithinking.activity.WeixinFriendActivity;
 import com.example.ithinking.activity.WeixinLoginActivity;
 import com.example.ithinking.activity.XmlyLoginActivity;
@@ -265,6 +267,33 @@ public class MainActivity extends AppCompatActivity {
      */
     public void tab(View view) {
         Intent intent = new Intent(this, TabViewActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 管理淘宝收货地址实现activity直接交换数据
+     * @param view
+     */
+    public void tabbaoAddress(View view) {
+        Intent intent = new Intent(this, TaoBaoAddressActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 选择图像并保存 调用activity并返回数据
+     * @param view
+     */
+    public void selectIco(View view) {
+        Intent intent = new Intent(this, SelectIcoActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Fragment
+     * @param view
+     */
+    public void fragment(View view) {
+        Intent intent = new Intent(this, FragmentExampleActivity.class);
         startActivity(intent);
     }
 }

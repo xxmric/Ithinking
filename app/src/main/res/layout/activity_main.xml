@@ -156,6 +156,26 @@
             android:layout_height="wrap_content"
             android:onClick="intent"
             android:text="Intent" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exitMap"
+            android:text="连按两次退出" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="touchEvent"
+            android:text="触摸事件" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myEvent"
+            android:text="自定义手势" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createEvent"
+            android:text="创建自定义手势" />
 
     </LinearLayout>
 </ScrollView>

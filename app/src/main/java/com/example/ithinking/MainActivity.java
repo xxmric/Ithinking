@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
 import com.example.ithinking.activity.ChronometerActivity;
+import com.example.ithinking.activity.CreateEventActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
+import com.example.ithinking.activity.ExitMapActivity;
 import com.example.ithinking.activity.FeijidazhanActivity;
 import com.example.ithinking.activity.FragmentExampleActivity;
 import com.example.ithinking.activity.FrameLayoutActivity;
@@ -20,6 +22,7 @@ import com.example.ithinking.activity.IntentActivity;
 import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
 import com.example.ithinking.activity.ListViewActivity;
+import com.example.ithinking.activity.MyEventActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
@@ -34,6 +37,7 @@ import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SpinnerActivity;
 import com.example.ithinking.activity.TabViewActivity;
 import com.example.ithinking.activity.TaoBaoAddressActivity;
+import com.example.ithinking.activity.TouchEventActivity;
 import com.example.ithinking.activity.WeixinFriendActivity;
 import com.example.ithinking.activity.WeixinLoginActivity;
 import com.example.ithinking.activity.XmlyLoginActivity;
@@ -305,6 +309,42 @@ public class MainActivity extends AppCompatActivity {
     public void intent(View view) {
         Intent intent = new Intent(this, IntentActivity.class);
         intent.setFlags(intent.FLAG_ACTIVITY_NO_HISTORY);//当前activity不在历史栈中保留
+        startActivity(intent);
+    }
+
+    /**
+     * 监听返回、长按事件
+     * @param view
+     */
+    public void exitMap(View view) {
+        Intent intent = new Intent(this, ExitMapActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 触摸事件
+     * @param view
+     */
+    public void touchEvent(View view) {
+        Intent intent = new Intent(this, TouchEventActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 自定义手势浏览相册中的图片
+     * @param view
+     */
+    public void myEvent(View view) {
+        Intent intent = new Intent(this, MyEventActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 创建自定义手势
+     * @param view
+     */
+    public void createEvent(View view) {
+        Intent intent = new Intent(this, CreateEventActivity.class);
         startActivity(intent);
     }
 }

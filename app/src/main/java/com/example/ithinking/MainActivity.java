@@ -35,6 +35,7 @@ import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SpinnerActivity;
+import com.example.ithinking.activity.StringResourceActivity;
 import com.example.ithinking.activity.TabViewActivity;
 import com.example.ithinking.activity.TaoBaoAddressActivity;
 import com.example.ithinking.activity.TouchEventActivity;
@@ -345,6 +346,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void createEvent(View view) {
         Intent intent = new Intent(this, CreateEventActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 字符串资源
+     * @param view
+     */
+    public void stringResource(View view) {
+        Intent intent = new Intent(this, StringResourceActivity.class);
         startActivity(intent);
     }
 }

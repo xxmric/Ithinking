@@ -176,6 +176,11 @@
             android:layout_height="wrap_content"
             android:onClick="createEvent"
             android:text="创建自定义手势" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stringResource"
+            android:text="资源文件" />
 
     </LinearLayout>
 </ScrollView>

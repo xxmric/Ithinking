@@ -201,6 +201,16 @@
             android:layout_height="wrap_content"
             android:onClick="myMenu"
             android:text="选项菜单" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="actionBar"
+            android:text="actionBar添加item" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="actionBarAndTab"
+            android:text="actionBar与tab" />
 
     </LinearLayout>
 </ScrollView>

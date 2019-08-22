@@ -23,6 +23,7 @@ public class ExitMapActivity extends Activity {
 
         //长按事件
         Button button = findViewById(R.id.event_2s);
+//        registerForContextMenu(button);//弹出菜单注册
         button.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {

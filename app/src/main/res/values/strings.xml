@@ -40,4 +40,5 @@
     <string name="todaynew_title">新闻标题</string>
     <string name="menu_title">设置</string>
     <string name="menu_regard">关于</string>
+    <string name="actionbar_search">搜索</string>
 </resources>

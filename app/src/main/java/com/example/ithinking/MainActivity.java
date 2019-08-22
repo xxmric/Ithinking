@@ -8,6 +8,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.ithinking.activity.ActionBarActivity;
+import com.example.ithinking.activity.ActionBarAndTabActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.CreateEventActivity;
@@ -395,6 +397,24 @@ public class MainActivity extends AppCompatActivity {
      */
     public void myMenu(View view) {
         Intent intent = new Intent(this, MyMenuActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * actionBar添加item
+     * @param view
+     */
+    public void actionBar(View view) {
+        Intent intent = new Intent(this, ActionBarActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * actionBar与tab
+     * @param view
+     */
+    public void actionBarAndTab(View view) {
+        Intent intent = new Intent(this, ActionBarAndTabActivity.class);
         startActivity(intent);
     }
 }

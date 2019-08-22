@@ -8,6 +8,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.ithinking.activity.ArrayResourceActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.CreateEventActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
@@ -23,6 +24,8 @@ import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
 import com.example.ithinking.activity.ListViewActivity;
 import com.example.ithinking.activity.MyEventActivity;
+import com.example.ithinking.activity.MyMenuActivity;
+import com.example.ithinking.activity.MyThemeActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
@@ -35,6 +38,7 @@ import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SpinnerActivity;
+import com.example.ithinking.activity.StateListDrawableActivity;
 import com.example.ithinking.activity.StringResourceActivity;
 import com.example.ithinking.activity.TabViewActivity;
 import com.example.ithinking.activity.TaoBaoAddressActivity;
@@ -350,11 +354,47 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 字符串资源
+     * 字符串/尺寸/颜色资源
      * @param view
      */
     public void stringResource(View view) {
         Intent intent = new Intent(this, StringResourceActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 数组资源
+     * @param view
+     */
+    public void arrayResource(View view) {
+        Intent intent = new Intent(this, ArrayResourceActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 状态列表资源
+     * @param view
+     */
+    public void stateListDrawable(View view) {
+        Intent intent = new Intent(this, StateListDrawableActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 自定义主题资源样式
+     * @param view
+     */
+    public void todaynews(View view) {
+        Intent intent = new Intent(this, MyThemeActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 定义选项菜单
+     * @param view
+     */
+    public void myMenu(View view) {
+        Intent intent = new Intent(this, MyMenuActivity.class);
         startActivity(intent);
     }
 }

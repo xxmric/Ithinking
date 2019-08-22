@@ -12,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activity.StringResourceActivity"></activity>
+        <activity android:name=".activity.SettingsActivity"></activity>
+        <activity android:name=".activity.RegardActivity" />
+        <activity android:name=".activity.MyMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name=".activity.MyThemeActivity" />
+        <activity
+            android:name=".activity.StateListDrawableActivity"
+            android:theme="@style/bgTheme" />
+        <activity android:name=".activity.ArrayResourceActivity" />
+        <activity android:name=".activity.StringResourceActivity" />
         <activity
             android:name=".activity.CreateEventActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />

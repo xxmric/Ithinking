@@ -181,6 +181,26 @@
             android:layout_height="wrap_content"
             android:onClick="stringResource"
             android:text="资源文件" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="arrayResource"
+            android:text="数组资源文件" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stateListDrawable"
+            android:text="状态列表资源" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="todaynews"
+            android:text="自定义主题资源样式" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMenu"
+            android:text="选项菜单" />
 
     </LinearLayout>
 </ScrollView>

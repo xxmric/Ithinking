@@ -211,6 +211,11 @@
             android:layout_height="wrap_content"
             android:onClick="actionBarAndTab"
             android:text="actionBar与tab" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="alertDialog"
+            android:text="AlertDialog对话框" />
 
     </LinearLayout>
 </ScrollView>

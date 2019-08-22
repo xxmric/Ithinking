@@ -12,13 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".activity.ActionBarAndTabActivity"></activity>
+        <activity android:name=".activity.AlertDialogActivity"></activity>
+        <activity android:name=".activity.ActionBarAndTabActivity" />
         <activity
             android:name=".activity.ActionBarActivity"
-            android:theme="@style/Theme.AppCompat" >
+            android:theme="@style/Theme.AppCompat">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"></meta-data>
+                android:value=".MainActivity" />
         </activity>
         <activity android:name=".activity.SettingsActivity" />
         <activity android:name=".activity.RegardActivity" />

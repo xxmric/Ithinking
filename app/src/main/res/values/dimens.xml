@@ -7,4 +7,5 @@
     <dimen name="margin">5dp</dimen>
     <dimen name="todaynews_margin_top">100dp</dimen>
     <dimen name="todaynews_textSize">40sp</dimen>
+    <dimen name="textSize">20sp</dimen>
 </resources>

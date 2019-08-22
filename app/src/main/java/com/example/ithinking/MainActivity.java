@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.example.ithinking.activity.ActionBarActivity;
 import com.example.ithinking.activity.ActionBarAndTabActivity;
+import com.example.ithinking.activity.AlertDialogActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.CreateEventActivity;
@@ -415,6 +416,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void actionBarAndTab(View view) {
         Intent intent = new Intent(this, ActionBarAndTabActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 对话框
+     * @param view
+     */
+    public void alertDialog(View view) {
+        Intent intent = new Intent(this, AlertDialogActivity.class);
         startActivity(intent);
     }
 }

@@ -17,6 +17,7 @@ import com.example.ithinking.activity.BroadcastReceiverActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.CreateEventActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
+import com.example.ithinking.activity.DrawActivity;
 import com.example.ithinking.activity.ExitMapActivity;
 import com.example.ithinking.activity.FeijidazhanActivity;
 import com.example.ithinking.activity.FragmentExampleActivity;
@@ -455,6 +456,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void alarmManager(View view) {
         Intent intent = new Intent(this, AlarmManagerActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 画笔和画布
+     * @param view
+     */
+    public void draw(View view) {
+        Intent intent = new Intent(this, DrawActivity.class);
         startActivity(intent);
     }
 }

@@ -231,6 +231,11 @@
             android:layout_height="wrap_content"
             android:onClick="alarmManager"
             android:text="AlarmManager设置闹钟" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="draw"
+            android:text="画笔和画布" />
 
     </LinearLayout>
 </ScrollView>

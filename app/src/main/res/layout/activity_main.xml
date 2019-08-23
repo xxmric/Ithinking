@@ -236,6 +236,26 @@
             android:layout_height="wrap_content"
             android:onClick="draw"
             android:text="画笔和画布" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="playerAudio"
+            android:text="MediaPlayer音频" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="soundPool"
+            android:text="SoundPool音频" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="videoView"
+            android:text="VideoView播放视频" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="camera"
+            android:text="camera拍照" />
 
     </LinearLayout>
 </ScrollView>

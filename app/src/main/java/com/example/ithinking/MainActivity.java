@@ -1,5 +1,6 @@
 package com.example.ithinking;
 
+import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import com.example.ithinking.activity.AlarmManagerActivity;
 import com.example.ithinking.activity.AlertDialogActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
 import com.example.ithinking.activity.BroadcastReceiverActivity;
+import com.example.ithinking.activity.CameraActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.CreateEventActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
@@ -33,6 +35,7 @@ import com.example.ithinking.activity.MyEventActivity;
 import com.example.ithinking.activity.MyMenuActivity;
 import com.example.ithinking.activity.MyThemeActivity;
 import com.example.ithinking.activity.NotificationActivity;
+import com.example.ithinking.activity.PlayerAudioActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
@@ -44,12 +47,14 @@ import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
+import com.example.ithinking.activity.SoundPoolActivity;
 import com.example.ithinking.activity.SpinnerActivity;
 import com.example.ithinking.activity.StateListDrawableActivity;
 import com.example.ithinking.activity.StringResourceActivity;
 import com.example.ithinking.activity.TabViewActivity;
 import com.example.ithinking.activity.TaoBaoAddressActivity;
 import com.example.ithinking.activity.TouchEventActivity;
+import com.example.ithinking.activity.VideoViewActivity;
 import com.example.ithinking.activity.WeixinFriendActivity;
 import com.example.ithinking.activity.WeixinLoginActivity;
 import com.example.ithinking.activity.XmlyLoginActivity;
@@ -465,6 +470,42 @@ public class MainActivity extends AppCompatActivity {
      */
     public void draw(View view) {
         Intent intent = new Intent(this, DrawActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 使用MediaPlayer播放音频文件
+     * @param view
+     */
+    public void playerAudio(View view) {
+        Intent intent = new Intent(this, PlayerAudioActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 使用SoundPool播放音频文件
+     * @param view
+     */
+    public void soundPool(View view) {
+        Intent intent = new Intent(this, SoundPoolActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 使用VideoView组件播放视频
+     * @param view
+     */
+    public void videoView(View view) {
+        Intent intent = new Intent(this, VideoViewActivity.class);
+        startActivity(intent);
+    }
+
+    /***
+     * 调用摄像头拍照
+     * @param view
+     */
+    public void camera(View view) {
+        Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);
     }
 }

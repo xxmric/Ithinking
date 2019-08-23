@@ -8,4 +8,6 @@
     <dimen name="todaynews_margin_top">100dp</dimen>
     <dimen name="todaynews_textSize">40sp</dimen>
     <dimen name="textSize">20sp</dimen>
+    <dimen name="margin_top">50dp</dimen>
+    <dimen name="margin_bottom">50dp</dimen>
 </resources>

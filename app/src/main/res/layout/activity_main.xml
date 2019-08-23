@@ -216,6 +216,21 @@
             android:layout_height="wrap_content"
             android:onClick="alertDialog"
             android:text="AlertDialog对话框" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="notification"
+            android:text="Notification在状态栏显示通知" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="broadcastReceiver"
+            android:text="BroadcastReceiver广播" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="alarmManager"
+            android:text="AlarmManager设置闹钟" />
 
     </LinearLayout>
 </ScrollView>

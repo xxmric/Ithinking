@@ -10,8 +10,10 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.example.ithinking.activity.ActionBarActivity;
 import com.example.ithinking.activity.ActionBarAndTabActivity;
+import com.example.ithinking.activity.AlarmManagerActivity;
 import com.example.ithinking.activity.AlertDialogActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
+import com.example.ithinking.activity.BroadcastReceiverActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.CreateEventActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
@@ -29,6 +31,7 @@ import com.example.ithinking.activity.ListViewActivity;
 import com.example.ithinking.activity.MyEventActivity;
 import com.example.ithinking.activity.MyMenuActivity;
 import com.example.ithinking.activity.MyThemeActivity;
+import com.example.ithinking.activity.NotificationActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
 import com.example.ithinking.activity.QQMessagesActivity;
@@ -425,6 +428,33 @@ public class MainActivity extends AppCompatActivity {
      */
     public void alertDialog(View view) {
         Intent intent = new Intent(this, AlertDialogActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Notification在状态栏显示通知
+     * @param view
+     */
+    public void notification(View view) {
+        Intent intent = new Intent(this, NotificationActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * BroadcastReceiver
+     * @param view
+     */
+    public void broadcastReceiver(View view) {
+        Intent intent = new Intent(this, BroadcastReceiverActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * AlarmManager设置闹钟
+     * @param view
+     */
+    public void alarmManager(View view) {
+        Intent intent = new Intent(this, AlarmManagerActivity.class);
         startActivity(intent);
     }
 }

@@ -1,13 +1,10 @@
 package com.example.ithinking;
 
-import android.app.Activity;
-import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
 
 import com.example.ithinking.activity.ActionBarActivity;
 import com.example.ithinking.activity.ActionBarAndTabActivity;
@@ -17,6 +14,7 @@ import com.example.ithinking.activity.ArrayResourceActivity;
 import com.example.ithinking.activity.BroadcastReceiverActivity;
 import com.example.ithinking.activity.CameraActivity;
 import com.example.ithinking.activity.ChronometerActivity;
+import com.example.ithinking.activity.ContentProviderActivity;
 import com.example.ithinking.activity.CreateEventActivity;
 import com.example.ithinking.activity.DateAndTimeActivity;
 import com.example.ithinking.activity.DrawActivity;
@@ -31,6 +29,7 @@ import com.example.ithinking.activity.IntentActivity;
 import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
 import com.example.ithinking.activity.ListViewActivity;
+import com.example.ithinking.activity.MemoActivity;
 import com.example.ithinking.activity.MyEventActivity;
 import com.example.ithinking.activity.MyMenuActivity;
 import com.example.ithinking.activity.MyThemeActivity;
@@ -46,9 +45,11 @@ import com.example.ithinking.activity.RatingBarActivity;
 import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
+import com.example.ithinking.activity.SharedPreferencesActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SoundPoolActivity;
 import com.example.ithinking.activity.SpinnerActivity;
+import com.example.ithinking.activity.Sqlite3Activity;
 import com.example.ithinking.activity.StateListDrawableActivity;
 import com.example.ithinking.activity.StringResourceActivity;
 import com.example.ithinking.activity.TabViewActivity;
@@ -506,6 +507,42 @@ public class MainActivity extends AppCompatActivity {
      */
     public void camera(View view) {
         Intent intent = new Intent(this, CameraActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * sharedPreferences存储模拟QQ登录
+     * @param view
+     */
+    public void sharedPreferences(View view) {
+        Intent intent = new Intent(this, SharedPreferencesActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 内部存储
+     * @param view
+     */
+    public void memo(View view) {
+        Intent intent = new Intent(this, MemoActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 数据库sqlite3的使用
+     * @param view
+     */
+    public void sqlite3(View view) {
+        Intent intent = new Intent(this, Sqlite3Activity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * ContentProvider 读取通讯录
+     * @param view
+     */
+    public void contentProvider(View view) {
+        Intent intent = new Intent(this, ContentProviderActivity.class);
         startActivity(intent);
     }
 }

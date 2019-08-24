@@ -1,7 +1,5 @@
 package com.example.ithinking.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,10 +12,12 @@ import android.provider.MediaStore;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.example.ithinking.MainActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.ithinking.R;
 
 import java.io.File;
@@ -34,6 +34,8 @@ public class CameraActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+        //设置全屏
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         ImageButton imageButton = findViewById(R.id.camera_takephoto);
         ImageButton imageButton2 = findViewById(R.id.camera_preview);

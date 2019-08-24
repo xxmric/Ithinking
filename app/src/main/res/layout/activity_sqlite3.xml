@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sqlite3_bg1"
+    tools:context=".activity.Sqlite3Activity">
+    <!--输入要翻译的单词-->
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_btn_margin"
+        android:background="@null"
+        android:hint="@string/search_et_hint"
+        android:paddingLeft="@dimen/margin" />
+    <!--查询按钮-->
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/search_btn_margin"
+        android:background="@color/btn_Background"
+        android:gravity="bottom"
+        android:paddingRight="@dimen/search_btn_margin"
+        android:src="@drawable/sqlite3_btn1"
+        android:text="查询单词" />
+    <!--显示结果的ListView-->
+    <ListView
+        android:id="@+id/result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_top">
+
+    </ListView>
+    <!--添加生词的按钮-->
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sqlite3_add" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sqlite3_bg2"
+    tools:context=".activity.Sqlite3AddActivity">
+    <!--输入添加单词词-->
+    <EditText
+        android:id="@+id/add_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="添加单词" />
+    <!--输入添加解释-->
+    <EditText
+        android:id="@+id/add_interpret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="添加解释" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--保存按钮-->
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="180dp"
+            android:background="@color/colorLucency"
+            android:src="@drawable/sqlite3_save" />
+        <!--取消按钮-->
+        <ImageButton
+            android:id="@+id/cancel_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:background="@color/colorLucency"
+            android:src="@drawable/sqlite3_cancel" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -10,4 +10,10 @@
     <dimen name="textSize">20sp</dimen>
     <dimen name="margin_top">50dp</dimen>
     <dimen name="margin_bottom">50dp</dimen>
+    <dimen name="margin_login_top">300dp</dimen>
+    <dimen name="search_btn_margin">100dp</dimen>
+    <dimen name="result_textSize">20sp</dimen>
+    <dimen name="paddingLeft">20dp</dimen>
+    <dimen name="paddingTop">200dp</dimen>
+    <dimen name="lineSpacingExtra">30dp</dimen>
 </resources>

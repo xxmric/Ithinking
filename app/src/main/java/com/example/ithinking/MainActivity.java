@@ -23,6 +23,8 @@ import com.example.ithinking.activity.FeijidazhanActivity;
 import com.example.ithinking.activity.FragmentExampleActivity;
 import com.example.ithinking.activity.FrameLayoutActivity;
 import com.example.ithinking.activity.GridViewActivity;
+import com.example.ithinking.activity.HandlerActivity;
+import com.example.ithinking.activity.HandlerMessageActivity;
 import com.example.ithinking.activity.ImageSwitcherActivity;
 import com.example.ithinking.activity.ImageViewActivity;
 import com.example.ithinking.activity.IntentActivity;
@@ -45,6 +47,7 @@ import com.example.ithinking.activity.RatingBarActivity;
 import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
+import com.example.ithinking.activity.ServiceActivity;
 import com.example.ithinking.activity.SharedPreferencesActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SoundPoolActivity;
@@ -543,6 +546,34 @@ public class MainActivity extends AppCompatActivity {
      */
     public void contentProvider(View view) {
         Intent intent = new Intent(this, ContentProviderActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Handler 消息传递机制
+     * @param view
+     */
+    public void handler(View view) {
+        Intent intent = new Intent(this, HandlerActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Handler Message 实现轮播
+     * @param view
+     */
+    public void handerMessage(View view) {
+        Intent intent = new Intent(this, HandlerMessageActivity.class);
+        startActivity(intent);
+
+    }
+
+    /**
+     * Looper
+     * @param view
+     */
+    public void service(View view) {
+        Intent intent = new Intent(this, ServiceActivity.class);
         startActivity(intent);
     }
 }

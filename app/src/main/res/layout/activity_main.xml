@@ -276,6 +276,21 @@
             android:layout_height="wrap_content"
             android:onClick="contentProvider"
             android:text="Content Provider 读取通讯录" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="handler"
+            android:text="Handler 消息传递机制" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="handerMessage"
+            android:text="Message 实例" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="service"
+            android:text="Service" />
 
     </LinearLayout>
 </ScrollView>

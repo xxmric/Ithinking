@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|top"
         android:layout_marginTop="@dimen/margin_top"
-        android:background="@color/btn_background"
+        android:background="@color/btn_Background"
         android:src="@drawable/camera" />
     <!--预览按钮-->
     <ImageButton
@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         android:layout_marginBottom="@dimen/margin_bottom"
-        android:background="@color/btn_background"
+        android:background="@color/btn_Background"
         android:src="@drawable/preview" />
 </FrameLayout>

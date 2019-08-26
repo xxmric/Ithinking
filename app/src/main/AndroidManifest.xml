@@ -24,11 +24,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         <service
+            android:name=".service.MyIntentService"
+            android:exported="false"></service>
+        <service
+            android:name=".service.BinderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.BoundServiceActivity" />
+
+        <service
             android:name=".service.MusicService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
-        <activity android:name=".activity.ServiceActivity" />
+        <activity android:name=".activity.StartedServiceActivity" />
         <activity android:name=".activity.HandlerMessageActivity" />
         <activity android:name=".activity.HandlerActivity" />
         <activity android:name=".activity.ContentProviderActivity" />

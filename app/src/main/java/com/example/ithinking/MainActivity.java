@@ -11,6 +11,7 @@ import com.example.ithinking.activity.ActionBarAndTabActivity;
 import com.example.ithinking.activity.AlarmManagerActivity;
 import com.example.ithinking.activity.AlertDialogActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
+import com.example.ithinking.activity.BoundServiceActivity;
 import com.example.ithinking.activity.BroadcastReceiverActivity;
 import com.example.ithinking.activity.CameraActivity;
 import com.example.ithinking.activity.ChronometerActivity;
@@ -47,7 +48,7 @@ import com.example.ithinking.activity.RatingBarActivity;
 import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
-import com.example.ithinking.activity.ServiceActivity;
+import com.example.ithinking.activity.StartedServiceActivity;
 import com.example.ithinking.activity.SharedPreferencesActivity;
 import com.example.ithinking.activity.SoftwareUpdateActivity;
 import com.example.ithinking.activity.SoundPoolActivity;
@@ -569,11 +570,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Looper
+     * StartedService 实现背景音乐播放与停止
      * @param view
      */
     public void service(View view) {
-        Intent intent = new Intent(this, ServiceActivity.class);
+        Intent intent = new Intent(this, StartedServiceActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     *boundService 模拟双色球彩票号码
+     * @param view
+     */
+    public void boundService(View view) {
+        Intent intent = new Intent(this, BoundServiceActivity.class);
         startActivity(intent);
     }
 }

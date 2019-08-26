@@ -291,6 +291,11 @@
             android:layout_height="wrap_content"
             android:onClick="service"
             android:text="Service" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="boundService"
+            android:text="Bound Service" />
 
     </LinearLayout>
 </ScrollView>

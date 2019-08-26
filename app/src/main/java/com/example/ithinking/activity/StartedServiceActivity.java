@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.ithinking.R;
 import com.example.ithinking.service.MusicService;
 
-public class ServiceActivity extends AppCompatActivity {
+public class StartedServiceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ithinking.activity.AccelerometerSensorActivity;
 import com.example.ithinking.activity.ActionBarActivity;
 import com.example.ithinking.activity.ActionBarAndTabActivity;
 import com.example.ithinking.activity.AlarmManagerActivity;
@@ -31,12 +32,15 @@ import com.example.ithinking.activity.ImageViewActivity;
 import com.example.ithinking.activity.IntentActivity;
 import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
+import com.example.ithinking.activity.LightSensorActivity;
 import com.example.ithinking.activity.ListViewActivity;
+import com.example.ithinking.activity.MagneticFieldSensorActivity;
 import com.example.ithinking.activity.MemoActivity;
 import com.example.ithinking.activity.MyEventActivity;
 import com.example.ithinking.activity.MyMenuActivity;
 import com.example.ithinking.activity.MyThemeActivity;
 import com.example.ithinking.activity.NotificationActivity;
+import com.example.ithinking.activity.OrientationSensorActivity;
 import com.example.ithinking.activity.PlayerAudioActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
@@ -584,6 +588,41 @@ public class MainActivity extends AppCompatActivity {
      */
     public void boundService(View view) {
         Intent intent = new Intent(this, BoundServiceActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 光线传感器
+     * @param view
+     */
+    public void lightSensor(View view) {
+        Intent intent = new Intent(this, LightSensorActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 磁场传感器 模拟指南针
+     * @param view
+     */
+    public void magneticFieldSensor(View view) {
+        Intent intent = new Intent(this, MagneticFieldSensorActivity.class);
+        startActivity(intent);
+    }
+    /**
+     * 加速度传感器 模拟摇一摇抢红包
+     * @param view
+     */
+    public void accelerometerSensor(View view) {
+        Intent intent = new Intent(this, AccelerometerSensorActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 方向传感器
+     * @param view
+     */
+    public void orientationSensor(View view) {
+        Intent intent = new Intent(this, OrientationSensorActivity.class);
         startActivity(intent);
     }
 }

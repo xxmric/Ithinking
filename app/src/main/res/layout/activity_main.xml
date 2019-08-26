@@ -296,6 +296,26 @@
             android:layout_height="wrap_content"
             android:onClick="boundService"
             android:text="Bound Service" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="lightSensor"
+            android:text="light sensor光线传感器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="magneticFieldSensor"
+            android:text="MAGNETIC_FIELD sensor磁场传感器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="accelerometerSensor"
+            android:text="ACCELEROMETER sensor加速度传感器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="orientationSensor"
+            android:text="orientation sensor方向传感器" />
 
     </LinearLayout>
 </ScrollView>

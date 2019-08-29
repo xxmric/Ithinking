@@ -316,6 +316,16 @@
             android:layout_height="wrap_content"
             android:onClick="orientationSensor"
             android:text="orientation sensor方向传感器" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="locationProvider"
+            android:text="LocationProvider" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="baidumap"
+            android:text="百度地图" />
 
     </LinearLayout>
 </ScrollView>

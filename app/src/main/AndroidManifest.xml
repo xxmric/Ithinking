@@ -15,7 +15,21 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature android:name="android.hardware.camera" /> <!-- 读取通讯录权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 允许使用振动器 -->
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 允许访问Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 百度地图授权 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +38,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".activity.OrientationSensorActivity"></activity>
+        <activity android:name=".activity.BaiduMapActivity" android:label="百度地图"></activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GnmU88Tgtuqz81X8sQN29WuHdGGO6roi" />
+
+        <activity android:name=".activity.LocationProviderActivity" />
+        <activity android:name=".activity.OrientationSensorActivity" />
         <activity android:name=".activity.AccelerometerSensorActivity" />
         <activity android:name=".activity.MagneticFieldSensorActivity" />
         <activity android:name=".activity.LightSensorActivity" />

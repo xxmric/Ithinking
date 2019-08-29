@@ -12,6 +12,7 @@ import com.example.ithinking.activity.ActionBarAndTabActivity;
 import com.example.ithinking.activity.AlarmManagerActivity;
 import com.example.ithinking.activity.AlertDialogActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
+import com.example.ithinking.activity.BaiduMapActivity;
 import com.example.ithinking.activity.BoundServiceActivity;
 import com.example.ithinking.activity.BroadcastReceiverActivity;
 import com.example.ithinking.activity.CameraActivity;
@@ -34,6 +35,7 @@ import com.example.ithinking.activity.KxxxlLoginActivity;
 import com.example.ithinking.activity.KxxxlStartActivity;
 import com.example.ithinking.activity.LightSensorActivity;
 import com.example.ithinking.activity.ListViewActivity;
+import com.example.ithinking.activity.LocationProviderActivity;
 import com.example.ithinking.activity.MagneticFieldSensorActivity;
 import com.example.ithinking.activity.MemoActivity;
 import com.example.ithinking.activity.MyEventActivity;
@@ -623,6 +625,24 @@ public class MainActivity extends AppCompatActivity {
      */
     public void orientationSensor(View view) {
         Intent intent = new Intent(this, OrientationSensorActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 定位服务
+     * @param view
+     */
+    public void locationProvider(View view) {
+        Intent intent = new Intent(this, LocationProviderActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 百度地图
+     * @param view
+     */
+    public void baidumap(View view) {
+        Intent intent = new Intent(this, BaiduMapActivity.class);
         startActivity(intent);
     }
 }

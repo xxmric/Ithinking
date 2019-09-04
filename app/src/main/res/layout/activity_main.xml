@@ -327,5 +327,23 @@
             android:onClick="baidumap"
             android:text="百度地图" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="browser"
+            android:text="百度浏览器" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="scanQrCode"
+            android:text="扫描二维码" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="photoUpload"
+            android:text="拍照上传" />
+
     </LinearLayout>
 </ScrollView>

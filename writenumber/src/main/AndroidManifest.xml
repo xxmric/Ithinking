@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ithink.writenumber">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--注册数字1书写界面并设置全屏-->
+        <activity
+            android:name=".OneActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字2书写界面并设置全屏-->
+        <activity
+            android:name=".TwoActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字3书写界面并设置全屏-->
+        <activity
+            android:name=".ThreeActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字4书写界面并设置全屏-->
+        <activity
+            android:name=".FourActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字5书写界面并设置全屏-->
+        <activity
+            android:name=".FiveActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字6书写界面并设置全屏-->
+        <activity
+            android:name=".SixActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字7书写界面并设置全屏-->
+        <activity
+            android:name=".SevenActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字8书写界面并设置全屏-->
+        <activity
+            android:name=".EightActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字9书写界面并设置全屏-->
+        <activity
+            android:name=".NineActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <!--注册数字0书写界面并设置全屏-->
+        <activity
+            android:name=".ZeroActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity
+            android:name=".SelectActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

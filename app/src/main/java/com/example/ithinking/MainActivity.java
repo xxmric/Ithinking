@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.ithinking.activity.AccelerometerSensorActivity;
 import com.example.ithinking.activity.ActionBarActivity;
 import com.example.ithinking.activity.ActionBarAndTabActivity;
@@ -13,8 +11,10 @@ import com.example.ithinking.activity.AlarmManagerActivity;
 import com.example.ithinking.activity.AlertDialogActivity;
 import com.example.ithinking.activity.ArrayResourceActivity;
 import com.example.ithinking.activity.BaiduMapActivity;
+import com.example.ithinking.activity.BasePermissionActivity;
 import com.example.ithinking.activity.BoundServiceActivity;
 import com.example.ithinking.activity.BroadcastReceiverActivity;
+import com.example.ithinking.activity.BrowserActivity;
 import com.example.ithinking.activity.CameraActivity;
 import com.example.ithinking.activity.ChronometerActivity;
 import com.example.ithinking.activity.ContentProviderActivity;
@@ -43,6 +43,7 @@ import com.example.ithinking.activity.MyMenuActivity;
 import com.example.ithinking.activity.MyThemeActivity;
 import com.example.ithinking.activity.NotificationActivity;
 import com.example.ithinking.activity.OrientationSensorActivity;
+import com.example.ithinking.activity.PhotoUploadActivity;
 import com.example.ithinking.activity.PlayerAudioActivity;
 import com.example.ithinking.activity.ProgressBarActivity;
 import com.example.ithinking.activity.QQImageActivity;
@@ -51,6 +52,7 @@ import com.example.ithinking.activity.QQSpeakActivity;
 import com.example.ithinking.activity.QuestionActivity;
 import com.example.ithinking.activity.RabbitActivity;
 import com.example.ithinking.activity.RatingBarActivity;
+import com.example.ithinking.activity.ScanQrCodeActivity;
 import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
 import com.example.ithinking.activity.SelectIcoActivity;
@@ -70,7 +72,7 @@ import com.example.ithinking.activity.WeixinFriendActivity;
 import com.example.ithinking.activity.WeixinLoginActivity;
 import com.example.ithinking.activity.XmlyLoginActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BasePermissionActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -643,6 +645,34 @@ public class MainActivity extends AppCompatActivity {
      */
     public void baidumap(View view) {
         Intent intent = new Intent(this, BaiduMapActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 显示网页客户端
+     * @param view
+     */
+    public void browser(View view) {
+        Intent intent = new Intent(this, BrowserActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 扫描二维码
+     * @param view
+     */
+    public void scanQrCode(View view) {
+        Intent intent = new Intent(this, ScanQrCodeActivity.class);
+        startActivity(intent);
+    }
+
+
+    /**
+     * 拍照预览上传
+     * @param view
+     */
+    public void photoUpload(View view) {
+        Intent intent = new Intent(this, PhotoUploadActivity.class);
         startActivity(intent);
     }
 }

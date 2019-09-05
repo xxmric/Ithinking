@@ -345,5 +345,11 @@
             android:onClick="photoUpload"
             android:text="拍照上传" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="retrofitOkhttp3Request"
+            android:text="retrofit2+okhttp3 请求数据" />
+
     </LinearLayout>
 </ScrollView>

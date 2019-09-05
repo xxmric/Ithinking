@@ -52,6 +52,7 @@ import com.example.ithinking.activity.QQSpeakActivity;
 import com.example.ithinking.activity.QuestionActivity;
 import com.example.ithinking.activity.RabbitActivity;
 import com.example.ithinking.activity.RatingBarActivity;
+import com.example.ithinking.activity.RetrofitDemoActivity;
 import com.example.ithinking.activity.ScanQrCodeActivity;
 import com.example.ithinking.activity.ScrollViewActivity;
 import com.example.ithinking.activity.SeekBarActivity;
@@ -673,6 +674,11 @@ public class MainActivity extends BasePermissionActivity {
      */
     public void photoUpload(View view) {
         Intent intent = new Intent(this, PhotoUploadActivity.class);
+        startActivity(intent);
+    }
+
+    public void retrofitOkhttp3Request(View view) {
+        Intent intent = new Intent(this, RetrofitDemoActivity.class);
         startActivity(intent);
     }
 }

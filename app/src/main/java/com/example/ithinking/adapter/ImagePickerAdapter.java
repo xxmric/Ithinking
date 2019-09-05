@@ -91,7 +91,6 @@ public class ImagePickerAdapter extends RecyclerView.Adapter<ImagePickerAdapter.
             iv_img = (ImageView) itemView.findViewById(R.id.iv_img);
         }
 
-
         public void bind(int position) {
             //设置条目的点击事件
             itemView.setOnClickListener(this);

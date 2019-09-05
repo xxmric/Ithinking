@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {//引入本地项目aar包
+        flatDir {
+            dirs 'libs'
+        }
+    }
 }
 
 dependencies {
@@ -36,35 +41,27 @@ dependencies {
     implementation files('libs/IndoorscapeAlbumPlugin.jar')
 
 //    implementation 'com.android.support:support-v4:+'
-//    //拍照上传
-//    implementation 'com.lzy.widget:imagepicker:0.5.4'
-//    implementation 'com.github.bumptech.glide:glide:3.7.0'
-//    implementation 'com.zhy:okhttputils:2.6.2'
     //拍照或选择照片上传
-    implementation ('com.lzy.widget:imagepicker:0.6.1'){
-        exclude group: 'com.android.support', module: 'support-v4'
-    }
-    implementation ('com.github.bumptech.glide:glide:3.7.0'){
-        exclude group: 'com.android.support', module: 'support-v4'
-    }
-    implementation ('com.squareup.picasso:picasso:2.5.2'){
-        exclude group: 'com.android.support', module: 'support-v4'
-    }
-    implementation ('org.xutils:xutils:3.3.36'){
-        exclude group: 'com.android.support', module: 'support-v4'
-    }
-    implementation ('com.nostra13.universalimageloader:universal-image-loader:1.9.5'){
-        exclude group: 'com.android.support', module: 'support-v4'
-    }
-    implementation ('com.lzy.widget:view-core:0.2.1'){
-        exclude group: 'com.android.support', module: 'support-v4'
-    }
+    implementation(name: 'imagepicker-release', ext: 'aar')
+    implementation('com.github.bumptech.glide:glide:3.7.0')
+    implementation('com.squareup.picasso:picasso:2.5.2')
+    implementation('org.xutils:xutils:3.3.36')
+    implementation('com.nostra13.universalimageloader:universal-image-loader:1.9.5')
+    implementation('com.lzy.widget:view-core:0.2.1')
 
 //    implementation 'com.android.support:support-v4:+'
     // 添加RecyclerView依赖库
-//    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
     // 添加网络请求框架相关
-    implementation("com.squareup.okhttp3:okhttp:3.14.0")
+    implementation("com.squareup.okhttp3:okhttp:3.12.0")
+//    implementation 'com.squareup.okhttp3:okhttp:3.13.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'io.reactivex:rxandroid:1.2.0'
+    implementation "io.reactivex.rxjava2:rxjava:2.1.14"
     //gson
     implementation 'com.google.code.gson:gson:2.8.5'
 }

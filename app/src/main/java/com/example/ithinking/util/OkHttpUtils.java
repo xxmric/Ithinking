@@ -5,8 +5,11 @@ import android.util.Log;
 
 import com.example.ithinking.bean.BookBean;
 import com.example.ithinking.bean.WeatherBean;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
@@ -61,7 +64,9 @@ public class OkHttpUtils {
             public void onResponse(Call call, Response response) throws IOException {
                 res = response.body().string();
                 Log.i("res", res);
-                WeatherBean bean = JsonUtils.getWeather(res);
+//                WeatherBean bean = JsonUtils.getWeather(res);
+                Type type = new TypeToken<WeatherBean>() {}.getType();
+                WeatherBean bean = new Gson().fromJson(res, type);
                 if (resultCallback != null) {
                     resultCallback.getWeather(bean);
                 }
@@ -90,7 +95,8 @@ public class OkHttpUtils {
             public void onResponse(Call call, Response response) throws IOException {
                 res = response.body().string();
                 Log.i("res", res);
-                BookBean bean = JsonUtils.getBook(res);
+                Type type = new TypeToken<BookBean>() {}.getType();
+                BookBean bean = new Gson().fromJson(res, type);
                 if (resultBookCallback != null) {
                     resultBookCallback.getBook(bean);
                 }

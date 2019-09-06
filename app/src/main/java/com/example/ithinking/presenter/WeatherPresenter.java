@@ -30,7 +30,7 @@ public class WeatherPresenter implements IWeatherPresenter, ILoadListener {
     }
 
     @Override
-    public void onSuccess(WeatherBean bean) {
+    public void onSuccess(WeatherBean bean) {//数据回调
         iWeatherView.hideProgress();
         iWeatherView.showWeatherData(bean);
     }

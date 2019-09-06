@@ -8,365 +8,134 @@ import java.util.List;
 
 public class WeatherBean {
 
-    /**
-     * date : 20180507
-     * message : Success !
-     * status : 200
-     * city : 广州
-     * count : 1642
-     * data : {"shidu":"86%","pm25":14,"pm10":24,"quality":"优","wendu":"26","ganmao":"各类人群可自由活动","yesterday":{"date":"06日星期日","sunrise":"05:52","high":"高温 30.0℃","low":"低温 24.0℃","sunset":"18:56","aqi":44,"fx":"无持续风向","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"},"forecast":[{"date":"07日星期一","sunrise":"05:51","high":"高温 27.0℃","low":"低温 21.0℃","sunset":"18:57","aqi":43,"fx":"无持续风向","fl":"<3级","type":"大到暴雨","notice":"雨势转大，在外找好避雨处"},{"date":"08日星期二","sunrise":"05:51","high":"高温 26.0℃","low":"低温 21.0℃","sunset":"18:57","aqi":49,"fx":"无持续风向","fl":"<3级","type":"大到暴雨","notice":"雨势转大，在外找好避雨处"},{"date":"09日星期三","sunrise":"05:50","high":"高温 25.0℃","low":"低温 21.0℃","sunset":"18:58","aqi":57,"fx":"无持续风向","fl":"<3级","type":"中雨","notice":"记得随身携带雨伞哦"},{"date":"10日星期四","sunrise":"05:49","high":"高温 26.0℃","low":"低温 21.0℃","sunset":"18:58","aqi":53,"fx":"东南风","fl":"3-4级","type":"多云","notice":"阴晴之间，谨防紫外线侵扰"},{"date":"11日星期五","sunrise":"05:49","high":"高温 28.0℃","low":"低温 22.0℃","sunset":"18:59","aqi":45,"fx":"东风","fl":"3-4级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"}]}
-     */
+    private Weatherinfo weatherinfo;
 
-    private String date;
-    private String message;
-    private int status;
-    private String city;
-    private int count;
-    private DataBean data;
-
-    public String getDate() {
-        return date;
+    public Weatherinfo getWeatherinfo() {
+        return weatherinfo;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setWeatherinfo(Weatherinfo weatherinfo) {
+        this.weatherinfo = weatherinfo;
     }
 
-    public String getMessage() {
-        return message;
-    }
+    public static class Weatherinfo {
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+        private String cityid;
+        private String city;
+        private String temp;
+        private String WD;
+        private String WS;
+        private String SD;
+        private String AP;
+        private String njd;
+        private String WSE;
+        private String time;
+        private String sm;
+        private String isRadar;
+        private String Radar;
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public DataBean getData() {
-        return data;
-    }
-
-    public void setData(DataBean data) {
-        this.data = data;
-    }
-
-    public static class DataBean {
-        /**
-         * shidu : 86%
-         * pm25 : 14.0
-         * pm10 : 24.0
-         * quality : 优
-         * wendu : 26
-         * ganmao : 各类人群可自由活动
-         * yesterday : {"date":"06日星期日","sunrise":"05:52","high":"高温 30.0℃","low":"低温 24.0℃","sunset":"18:56","aqi":44,"fx":"无持续风向","fl":"<3级","type":"雷阵雨","notice":"带好雨具，别在树下躲雨"}
-         * forecast : [{"date":"07日星期一","sunrise":"05:51","high":"高温 27.0℃","low":"低温 21.0℃","sunset":"18:57","aqi":43,"fx":"无持续风向","fl":"<3级","type":"大到暴雨","notice":"雨势转大，在外找好避雨处"},{"date":"08日星期二","sunrise":"05:51","high":"高温 26.0℃","low":"低温 21.0℃","sunset":"18:57","aqi":49,"fx":"无持续风向","fl":"<3级","type":"大到暴雨","notice":"雨势转大，在外找好避雨处"},{"date":"09日星期三","sunrise":"05:50","high":"高温 25.0℃","low":"低温 21.0℃","sunset":"18:58","aqi":57,"fx":"无持续风向","fl":"<3级","type":"中雨","notice":"记得随身携带雨伞哦"},{"date":"10日星期四","sunrise":"05:49","high":"高温 26.0℃","low":"低温 21.0℃","sunset":"18:58","aqi":53,"fx":"东南风","fl":"3-4级","type":"多云","notice":"阴晴之间，谨防紫外线侵扰"},{"date":"11日星期五","sunrise":"05:49","high":"高温 28.0℃","low":"低温 22.0℃","sunset":"18:59","aqi":45,"fx":"东风","fl":"3-4级","type":"阵雨","notice":"阵雨来袭，出门记得带伞"}]
-         */
-
-        private String shidu;
-        private double pm25;
-        private double pm10;
-        private String quality;
-        private String wendu;
-        private String ganmao;
-        private YesterdayBean yesterday;
-        private List<ForecastBean> forecast;
-
-        public String getShidu() {
-            return shidu;
+        public String getCityid() {
+            return cityid;
         }
 
-        public void setShidu(String shidu) {
-            this.shidu = shidu;
+        public void setCityid(String cityid) {
+            this.cityid = cityid;
         }
 
-        public double getPm25() {
-            return pm25;
+        public String getCity() {
+            return city;
         }
 
-        public void setPm25(double pm25) {
-            this.pm25 = pm25;
+        public void setCity(String city) {
+            this.city = city;
         }
 
-        public double getPm10() {
-            return pm10;
+        public String getTemp() {
+            return temp;
         }
 
-        public void setPm10(double pm10) {
-            this.pm10 = pm10;
+        public void setTemp(String temp) {
+            this.temp = temp;
         }
 
-        public String getQuality() {
-            return quality;
+        public String getWD() {
+            return WD;
         }
 
-        public void setQuality(String quality) {
-            this.quality = quality;
+        public void setWD(String WD) {
+            this.WD = WD;
         }
 
-        public String getWendu() {
-            return wendu;
+        public String getWS() {
+            return WS;
         }
 
-        public void setWendu(String wendu) {
-            this.wendu = wendu;
+        public void setWS(String WS) {
+            this.WS = WS;
         }
 
-        public String getGanmao() {
-            return ganmao;
+        public String getSD() {
+            return SD;
         }
 
-        public void setGanmao(String ganmao) {
-            this.ganmao = ganmao;
+        public void setSD(String SD) {
+            this.SD = SD;
         }
 
-        public YesterdayBean getYesterday() {
-            return yesterday;
+        public String getAP() {
+            return AP;
         }
 
-        public void setYesterday(YesterdayBean yesterday) {
-            this.yesterday = yesterday;
+        public void setAP(String AP) {
+            this.AP = AP;
         }
 
-        public List<ForecastBean> getForecast() {
-            return forecast;
+        public String getNjd() {
+            return njd;
         }
 
-        public void setForecast(List<ForecastBean> forecast) {
-            this.forecast = forecast;
+        public void setNjd(String njd) {
+            this.njd = njd;
         }
 
-        public static class YesterdayBean {
-            /**
-             * date : 06日星期日
-             * sunrise : 05:52
-             * high : 高温 30.0℃
-             * low : 低温 24.0℃
-             * sunset : 18:56
-             * aqi : 44.0
-             * fx : 无持续风向
-             * fl : <3级
-             * type : 雷阵雨
-             * notice : 带好雨具，别在树下躲雨
-             */
-
-            private String date;
-            private String sunrise;
-            private String high;
-            private String low;
-            private String sunset;
-            private double aqi;
-            private String fx;
-            private String fl;
-            private String type;
-            private String notice;
-
-            public String getDate() {
-                return date;
-            }
-
-            public void setDate(String date) {
-                this.date = date;
-            }
-
-            public String getSunrise() {
-                return sunrise;
-            }
-
-            public void setSunrise(String sunrise) {
-                this.sunrise = sunrise;
-            }
-
-            public String getHigh() {
-                return high;
-            }
-
-            public void setHigh(String high) {
-                this.high = high;
-            }
-
-            public String getLow() {
-                return low;
-            }
-
-            public void setLow(String low) {
-                this.low = low;
-            }
-
-            public String getSunset() {
-                return sunset;
-            }
-
-            public void setSunset(String sunset) {
-                this.sunset = sunset;
-            }
-
-            public double getAqi() {
-                return aqi;
-            }
-
-            public void setAqi(double aqi) {
-                this.aqi = aqi;
-            }
-
-            public String getFx() {
-                return fx;
-            }
-
-            public void setFx(String fx) {
-                this.fx = fx;
-            }
-
-            public String getFl() {
-                return fl;
-            }
-
-            public void setFl(String fl) {
-                this.fl = fl;
-            }
-
-            public String getType() {
-                return type;
-            }
-
-            public void setType(String type) {
-                this.type = type;
-            }
-
-            public String getNotice() {
-                return notice;
-            }
-
-            public void setNotice(String notice) {
-                this.notice = notice;
-            }
+        public String getWSE() {
+            return WSE;
         }
 
-        public static class ForecastBean {
-            /**
-             * date : 07日星期一
-             * sunrise : 05:51
-             * high : 高温 27.0℃
-             * low : 低温 21.0℃
-             * sunset : 18:57
-             * aqi : 43.0
-             * fx : 无持续风向
-             * fl : <3级
-             * type : 大到暴雨
-             * notice : 雨势转大，在外找好避雨处
-             */
+        public void setWSE(String WSE) {
+            this.WSE = WSE;
+        }
 
-            private String date;
-            private String sunrise;
-            private String high;
-            private String low;
-            private String sunset;
-            private double aqi;
-            private String fx;
-            private String fl;
-            private String type;
-            private String notice;
+        public String getTime() {
+            return time;
+        }
 
-            public String getDate() {
-                return date;
-            }
+        public void setTime(String time) {
+            this.time = time;
+        }
 
-            public void setDate(String date) {
-                this.date = date;
-            }
+        public String getSm() {
+            return sm;
+        }
 
-            public String getSunrise() {
-                return sunrise;
-            }
+        public void setSm(String sm) {
+            this.sm = sm;
+        }
 
-            public void setSunrise(String sunrise) {
-                this.sunrise = sunrise;
-            }
+        public String getIsRadar() {
+            return isRadar;
+        }
 
-            public String getHigh() {
-                return high;
-            }
+        public void setIsRadar(String isRadar) {
+            this.isRadar = isRadar;
+        }
 
-            public void setHigh(String high) {
-                this.high = high;
-            }
+        public String getRadar() {
+            return Radar;
+        }
 
-            public String getLow() {
-                return low;
-            }
-
-            public void setLow(String low) {
-                this.low = low;
-            }
-
-            public String getSunset() {
-                return sunset;
-            }
-
-            public void setSunset(String sunset) {
-                this.sunset = sunset;
-            }
-
-            public double getAqi() {
-                return aqi;
-            }
-
-            public void setAqi(double aqi) {
-                this.aqi = aqi;
-            }
-
-            public String getFx() {
-                return fx;
-            }
-
-            public void setFx(String fx) {
-                this.fx = fx;
-            }
-
-            public String getFl() {
-                return fl;
-            }
-
-            public void setFl(String fl) {
-                this.fl = fl;
-            }
-
-            public String getType() {
-                return type;
-            }
-
-            public void setType(String type) {
-                this.type = type;
-            }
-
-            public String getNotice() {
-                return notice;
-            }
-
-            public void setNotice(String notice) {
-                this.notice = notice;
-            }
+        public void setRadar(String radar) {
+            Radar = radar;
         }
     }
 }

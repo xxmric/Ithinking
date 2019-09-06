@@ -4,6 +4,7 @@ import com.example.ithinking.bean.BookBean;
 import com.example.ithinking.bean.WeatherBean;
 
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 import rx.Observable;
 
@@ -13,15 +14,16 @@ import rx.Observable;
 
 public interface RetrofitService {
     /*
-    * https://www.sojson.com/open/api/weather/json.shtml?city=广州
+    * http://www.weather.com.cn/data/sk/101010100.html
     * */
-    @GET("open/api/weather/json.shtml")
-    Observable<WeatherBean> getWeather(@Query("city") String city);
+    @GET("data/sk/{city}.html")
+    Observable<WeatherBean> getWeather(@Path("city") String city);
 
     /*
     * https://api.douban.com/v2/book/search?q=金瓶梅
     * */
     @GET("book/search")
     Observable<BookBean> getBook(@Query("q") String name);
+
 
 }

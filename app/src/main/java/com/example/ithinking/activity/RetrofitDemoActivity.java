@@ -49,10 +49,10 @@ public class RetrofitDemoActivity extends Activity implements IBookView, IWeathe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_search:
-                presenter.loadWeather("广州");
+                presenter.loadWeather("101280101");//广州
                 break;
             case R.id.btn_beijing_search:
-                presenter.loadWeather("北京");
+                presenter.loadWeather("101010100");//北京
                 break;
             case R.id.btn_book:
                 bookPresenter.loadBook("金瓶梅");
@@ -103,16 +103,13 @@ public class RetrofitDemoActivity extends Activity implements IBookView, IWeathe
         runOnUiThread(new TimerTask() {
             @Override
             public void run() {
-                if (weatherBean.getStatus() == 304) {
-                    Toast.makeText(RetrofitDemoActivity.this, weatherBean.getMessage(),
+                if (weatherBean == null) {
+                    Toast.makeText(RetrofitDemoActivity.this, "天气信息不存在",
                             Toast.LENGTH_SHORT).show();
                 } else {
-                    tvWeather.setText("城市：" + weatherBean.getCity()
-                            + " 日期：" + weatherBean.getDate()
-                            + " 温度:" + weatherBean.getData().getWendu());
-                    tvWeatherYesterday.setText(
-                            "昨日天气：" + weatherBean.getData().getYesterday().getLow() + " "
-                                    + weatherBean.getData().getYesterday().getHigh());
+                    tvWeather.setText("城市：" + weatherBean.getWeatherinfo().getCity()
+                            + " 日期：" + weatherBean.getWeatherinfo().getTime()
+                            + " 温度:" + weatherBean.getWeatherinfo().getWD());
                 }
             }
         });
